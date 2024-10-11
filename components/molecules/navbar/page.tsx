@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Button } from '@/components/atoms/button/page';
+import { Button } from '@/components/atoms/button';
 
 const Navbar: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
                         className="object-contain"
                     />
                 </div>
-                <div className='flex space-x-10'>
+                <div className='hidden md:flex space-x-10 '>
                     <div>
                         채용
 
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                         해외 개발자 활용 서비스
                     </div>
                 </div>
-                <div>
+                <div className='hidden md:block'>
                     <Button variant="secondary">
                         <p className='text-[#4A77FF] font-semibold'>
                             문의하기

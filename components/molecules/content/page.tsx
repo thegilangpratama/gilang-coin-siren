@@ -8,15 +8,14 @@ interface ContentProps {
 
 export default function Content({ children, className }: ContentProps) {
     return (
-        <div className={`relative ${className}`}> {/* Use className prop here */}
-            {/* Background Gradient Layer */}
-            <div className="bg-[linear-gradient(151.17deg,#26C2B9_8.69%,#288BE7_126.06%)] h-full w-full absolute top-0 left-0 z-0"></div>
+        <div className={`relative ${className}`}>
+            <div
+                className="bg-cover bg-center absolute top-0 opacity-35 h-full w-full"
+                style={{ backgroundImage: "url('/background.png')" }}
+            >
 
-            {/* Image Background Layer with Transparency */}
-            <div className="bg-[url('/background.png')] bg-center bg-cover h-full w-full absolute top-0 left-0 z-10 opacity-50"></div>
-
-            {/* Content Layer */}
-            <div className="relative z-20 flex mx-32">
+            </div>
+            <div className="relative z-20 mx-5 md:mx-32">
                 {children}
             </div>
         </div>
