@@ -3,7 +3,7 @@ import React from 'react';
 
 interface ContentProps {
     children: React.ReactNode;
-    className?: string; // Add className prop, which is optional
+    className?: string;
 }
 
 export default function Content({ children, className }: ContentProps) {

@@ -9,13 +9,6 @@ import Gear from "@/public/footer/gear.svg";
 import Korean from "@/public/footer/korean.svg";
 import Arrow from "@/public/footer/arrow.svg";
 
-import { Poppins } from '@next/font/google';
-
-const poppins = Poppins({
-    weight: ['400', '600', '700'],
-    subsets: ['latin'],
-});
-
 const cardData = [
     { icon: Code, text: '해외 개발자 원격 채용' },
     { icon: Avatar, text: '외국인 원격 채용 (비개발)' },
@@ -24,7 +17,7 @@ const cardData = [
 ];
 
 const Footer: React.FC = () => (
-    <div className={`w-full bg-[#fbfbfb] content-center justify-center ${poppins.className}`}>
+    <div className={`w-full bg-[#fbfbfb] content-center justify-center`}>
         <div className='mx-5 md:mx-32 my-10 pb-5 pt-2 items-center content-center text-[#343741] text-sm'>
             <div className='md:flex md:space-x-20 md:my-10 space-y-5 md:space-y-0'>
                 {/* Hyperhire Logo and Info */}
