@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
                 <div className='flex space-x-3 justify-center items-center'>
                     <Image
                         src="/logo.svg"
-                        alt="Santan Prima Bahari Logo"
+                        alt="Hyperhire Logo"
                         width={150}
                         height={40}
                         className="object-contain"
