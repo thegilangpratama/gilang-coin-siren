@@ -4,8 +4,6 @@ import Navbar from '@/components/organisms/navbar';
 import Tooltip from '@/components/atoms/tooltip';
 import CarouselInfo from '@/components/molecules/carousel-info';
 import ProfileCard from '@/components/molecules/profile-cards';
-import Icon from '@/components/atoms/icon';
-
 import Currency from '@/public/body/currency.svg';
 
 import { Poppins } from '@next/font/google';
